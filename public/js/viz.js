@@ -5,5 +5,6 @@ socket.emit('listen', {
 });
 
 socket.on('data', function (data) {
-  $('body').append(data);
+  alert(data);
+  $('body').html(data);
 });
